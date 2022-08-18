@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+</body>
+<script>
+    let mang = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+    let max = mang[0];
+    let vitri ;
+    for (i = 0; i < mang.length; i++) {
+        if (mang[i] > max) {
+            max = mang[i];
+            vitri=mang.indexOf(max)
+        }
+    }document.write('max : ' + max +'location :' +vitri)
+
+</script>
+</html>

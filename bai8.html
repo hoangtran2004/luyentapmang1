@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let mang = [];
+    for (let i = 0; i < 10; i++) {
+        let a = +prompt('nhap phan tu thu ' + i);
+        mang.push(a);
+    }
+    for (let i = 0; i < mang.length; i++) {
+        for (let j = i + 1; j < mang.length; j++) {
+            if (mang[i] < mang[j]) {
+                let abc = mang[i];
+                mang[i] = mang[j];
+                mang[j] = abc;
+            }
+        }
+    }document.write(mang)
+</script>
+</body>
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+</body>
+<script>
+    let a = [];
+    for (let i = 0; i < 10; i++) {
+        let b = +prompt("nhap so " + i);
+        a.push(b);
+    }
+    let v =+prompt('nhap so can xoa');
+    let vitri=a.indexOf(v) ;
+    if (vitri== -1) {
+    alert('khong co ') ;
+
+    }else {
+        a.splice(vitri, 1);
+        a.push(0);
+       console.log(a)
+    }
+
+</script>
+</html>

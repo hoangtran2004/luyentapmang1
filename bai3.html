@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+</body>
+<script>
+    let a = [3, 2, 5, 7, 5, 9];
+    let sum = 0;
+    let max = a[0];
+    let tb;
+    for (let i = 0; i < a.length; i++) {
+        {
+            sum = sum + a[i];
+            tb = sum / 6;
+        }
+        if (a[i] > max) {
+            max = a[i]
+        }
+    }
+    document.write('max : ' + max + 'medium ' + tb)
+</script>
+</html>
